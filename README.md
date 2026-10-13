@@ -1,7 +1,8 @@
 # Pantauan Gizi Balita – Kecamatan Krejengan
 
-Situs statis (GitHub Pages) yang menampilkan jumlah anak stunting per desa dari data e-PPGBM.
-Data pribadi **tidak pernah** keluar dari komputer puskesmas. Yang naik ke GitHub hanya JSON agregat.
+Web Statis
+Data pribadi **tetap lokal** 
+Yang naik ke GitHub hanya JSON agregat.
 
 ```
 mentah/    ← Excel e-PPGBM (LOKAL, .gitignore)
@@ -15,7 +16,7 @@ web/       ← situs publik: index.html, js/, css/, geo/, data/
 
 ## A. Persiapan sekali saja
 
-1. **Pasang Python 3.10+** dan Git di komputer puskesmas.
+1. **Pasang Python 3.10+** dan Git di komputer 
 2. **Siapkan lingkungan** (di folder proyek):
    ```
    python -m venv .venv
@@ -29,19 +30,8 @@ web/       ← situs publik: index.html, js/, css/, geo/, data/
    ```
    Salin `kunci.txt` ke **dua tempat aman** di luar repositori (misalnya flashdisk dan drive bersama puskesmas). Jangan dikirim lewat WhatsApp atau email.
 4. **Folder `mentah/` dan `riwayat/`** sebaiknya berada di drive bersama puskesmas agar operator bisa bergantian.
-5. **Buat repositori GitHub** (publik), lalu:
-   ```
-   git init -b main
-   git add .
-   git status          ← pastikan TIDAK ada mentah/, riwayat/, kunci.txt, atau .xlsx
-   git commit -m "awal"
-   git remote add origin https://github.com/NAMA/antistunting.git
-   git push -u origin main
-   ```
-6. **Aktifkan Pages:** di GitHub buka *Settings → Pages → Build and deployment → Source: GitHub Actions*. Setelah push berikutnya, alamat situs muncul di tab *Actions*.
-7. **Ganti lambang:** timpa `web/img/lambang.svg` dengan lambang resmi (SVG, atau ganti nama berkas di `index.html` dan `manifest.json` bila PNG).
-8. **Lengkapi alias** di `olah/config.yaml` (ejaan desa dan posyandu yang berbeda-beda di Excel) bersama kader.
-9. **Pastikan kode "Naik Berat Badan"**: skrip menganggap `T` = berat badan tidak naik (`kode_tidak_naik` di config). Konfirmasikan arti kode N, T, O, B dengan puskesmas.
+7. **Lengkapi alias** di `olah/config.yaml` (ejaan desa dan posyandu yang berbeda-beda di Excel) bersama kader.
+8. **Pastikan kode "Naik Berat Badan"**: skrip menganggap `T` = berat badan tidak naik (`kode_tidak_naik` di config). Konfirmasikan arti kode N, T, O, B dengan puskesmas.
 
 ## B. Rutinitas bulanan (sekitar 10 menit)
 
