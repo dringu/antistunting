@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rapor Gizi Balita Desa · Kecamatan Krejengan</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/rapor.css"></head><body>
+<div class="tools noprint"><a href="./">&larr; Kembali ke peta</a>
+<label>Desa <select id="sd"></select></label><label>Bulan <select id="sb"></select></label>
+<button id="cetak">Cetak / simpan PDF</button></div>
+<p id="galat" class="noprint" hidden>Data belum bisa dimuat. Periksa sambungan internet lalu muat ulang halaman.</p>
+<article class="sheet" id="sheet" hidden>
+<header><img src="img/lambang.svg" alt="Lambang" width="46" height="52"><div><div class="k">Kecamatan Krejengan · Kabupaten Probolinggo</div><h1 id="rj"></h1><div id="rb" class="sub"></div></div></header>
+<section class="kartu" id="rk"></section>
+<section class="dua"><div><h2>Perjalanan per bulan</h2><svg id="rt" viewBox="0 0 400 200" role="img" aria-label="Grafik jumlah anak stunting per bulan di desa ini"></svg><p class="kecil">Garis penuh: semua anak stunting. Garis putus-putus: sangat pendek.</p></div>
+<div><h2>Letak desa</h2><svg id="rm" viewBox="0 0 400 400" role="img" aria-label="Peta kecamatan dengan desa ini disorot"></svg></div></section>
+<section><h2>Ringkasan</h2><p id="rn" class="narasi"></p></section>
+<section class="dua"><div><h2>Pesan untuk keluarga dan kader</h2><ul class="pesan">
+<li>Bawa balita ke posyandu setiap bulan untuk ditimbang dan diukur panjang atau tinggi badannya.</li>
+<li>Berikan ASI saja sampai bayi berusia 6 bulan, lalu mulai makanan pendamping dengan protein hewani seperti telur, ikan, atau hati ayam.</li>
+<li>Lengkapi imunisasi, dan segera periksakan anak yang sering sakit atau berat badannya tidak naik.</li>
+<li>Jaga air minum bersih, cuci tangan dengan sabun, dan gunakan jamban sehat.</li></ul></div>
+<div><h2>Catatan petugas</h2><div class="garis"></div><div class="garis"></div><div class="garis"></div><div class="garis"></div></div></section>
+<section class="ttd"><div>Kepala Desa<br><br><br><br>(................................)</div><div>Bidan Desa<br><br><br><br>(................................)</div><div>Kepala Puskesmas<br><br><br><br>(................................)</div></section>
+<footer>Sumber: e-PPGBM, diolah dari data anak dengan tinggi badan menurut umur pendek atau sangat pendek. Angka adalah jumlah anak, bukan persentase. Kelompok kurang dari 5 anak tidak ditampilkan untuk melindungi privasi. Dicetak <span id="tgl"></span>.</footer>
+</article>
+<script src="js/rapor.js"></script></body></html>

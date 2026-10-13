@@ -1,0 +1,8 @@
+# DATA PRIBADI - jangan pernah masuk repositori
+mentah/
+riwayat/
+kunci.txt
+*.xlsx
+*.xls
+__pycache__/
+.venv/

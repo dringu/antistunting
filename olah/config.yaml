@@ -1,0 +1,17 @@
+# Kunci hash JANGAN ditulis di sini. Simpan di kunci.txt (folder proyek, sudah di .gitignore)
+# atau di variabel lingkungan ANTISTUNTING_KUNCI.
+min_sel: 5                 # kelompok di bawah angka ini disembunyikan di data publik
+kode_tidak_naik: T         # kode kolom "Naik Berat Badan" untuk berat badan tidak naik (PASTIKAN dengan puskesmas)
+ambang:
+  berat_maks_kg: 25
+  tinggi_min_cm: 35
+  tinggi_maks_cm: 125
+  z_maks: 10               # |z| lebih besar dianggap tidak valid (mis. 999.99)
+alias_desa:                # ejaan di Excel -> nama baku (harus sama dengan nama di web/geo/desa.geojson)
+  "OPO - OPO": OPO-OPO
+  "KEDUNG CALUK": KEDUNGCALUK
+  "SUMBER KATIMOHO": SUMBERKATIMOHO
+alias_posyandu:            # lengkapi bersama kader
+  BANTUL: BANTOL
+  JAWA AN: JAWAAN
+  LAMUR: LAMUR BUARAN

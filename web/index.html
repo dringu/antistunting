@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="id"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Pantauan Gizi Balita · Kecamatan Krejengan</title>
+<meta name="theme-color" content="#0E5A4B"><link rel="manifest" href="manifest.json">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css"></head><body>
+<header><div class="w hd"><img src="img/lambang.svg" alt="Lambang" width="60" height="68">
+<div><div class="k">Kabupaten Probolinggo</div><h1>Kecamatan Krejengan</h1><div class="sub">Pantauan gizi balita, terbuka untuk semua warga</div></div></div></header>
+<main>
+<section class="kartu" id="kartu" aria-live="polite"></section>
+<div class="c"><div class="bar" id="bln" role="group" aria-label="Pilih bulan"></div>
+<div class="g"><div><svg id="m" viewBox="0 0 400 400" role="img" aria-label="Peta desa di Kecamatan Krejengan berwarna menurut jumlah anak stunting"></svg><div class="lg" id="lg"></div></div>
+<div><h2>Jumlah anak per desa</h2><p class="mut">Anak dengan tinggi badan pendek atau sangat pendek yang tercatat bulan ini. Ini jumlah anak, bukan persentase.</p><div id="tip" aria-live="polite">Pilih desa di peta atau daftar.</div><div class="r" id="r"></div></div></div></div>
+<div class="c"><h2 id="trj">Seluruh kecamatan</h2><p class="mut">Perjalanan per bulan. Garis penuh: semua anak stunting. Garis putus-putus: yang sangat pendek. Pilih desa di peta untuk melihat desa itu saja.</p><svg id="tr" viewBox="0 0 400 200" role="img" aria-label="Grafik jumlah anak stunting per bulan"></svg></div>
+<p id="galat" class="mut" hidden>Data belum bisa dimuat. Periksa sambungan internet lalu muat ulang halaman.</p>
+</main>
+<footer>Data agregat e-PPGBM. Kelompok kurang dari 5 anak tidak ditampilkan. Persentase akan tersedia setelah data seluruh balita yang ditimbang masuk. <span id="upd"></span></footer>
+<script src="js/app.js"></script></body></html>
